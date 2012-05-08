@@ -1,0 +1,19 @@
+﻿@model DataValidation.ViewModels.LineItemViewModel
+<h2>
+    Line Item View Mode</h2>
+<table border="1">
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.PricePerItem)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Qty)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+        </td>
+    </tr>
+</table>

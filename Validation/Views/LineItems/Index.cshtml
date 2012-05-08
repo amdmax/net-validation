@@ -1,0 +1,12 @@
+﻿@using DataValidation.ViewModels
+@model List<LineItemViewModel>
+
+<h2>Line Items</h2>
+<ul>
+    @foreach(LineItemViewModel viewModel in Model)
+    {
+        <li>@Html.ActionLink(viewModel.Name, "Show", new {id=viewModel.Id})</li>
+    }
+</ul>
+
+@Html.ActionLink("Create", "New")

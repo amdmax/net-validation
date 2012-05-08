@@ -1,0 +1,7 @@
+﻿@model DataValidation.Models.Customer
+
+<h2>title</h2>
+@Html.DisplayFor(model=>model.Address)
+@Html.DisplayFor(model=>model.Email)
+@Html.DisplayFor(model=>model.NoNeedToBind)
+@Html.ActionLink("Edit", "Edit", new {id=Model.Id})

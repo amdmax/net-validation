@@ -1,0 +1,12 @@
+﻿@model DataValidation.ViewModels.CustomerViewModel
+
+<h2>title</h2>
+@using (Html.BeginForm("Create", "Customer", FormMethod.Post))
+{
+    @Html.ValidationSummary();
+    
+    @Html.HiddenFor(x=>x.Id)
+    @Html.EditorFor(x => x.Address)
+    @Html.EditorFor(x=>x.Email)
+    <input type="submit" value="Submit"/>
+}

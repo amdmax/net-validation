@@ -1,0 +1,13 @@
+﻿@model DataValidation.ViewModels.LineItemViewModel
+
+<h2>Line Item View Model</h2>
+@using (Html.BeginForm("Create", "LineItems", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    @Html.HiddenFor(model=>model.Id)
+    @Html.EditorFor(model => model.Name)
+    @Html.EditorFor(model => model.PricePerItem)
+    @Html.EditorFor(model => model.Qty)
+    
+    <input type="submit" value="Submit"  />
+}

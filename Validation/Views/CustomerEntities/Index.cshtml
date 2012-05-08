@@ -1,0 +1,12 @@
+﻿@using DataValidation.Models
+@model IEnumerable<Customer>
+
+<h2>Customers</h2>
+<ul>
+    @foreach(Customer model in Model)
+    {
+        <li>@Html.ActionLink(model.Email, "Show", new {id=model.Id})</li>
+    }
+</ul>
+
+@Html.ActionLink("Create", "New")

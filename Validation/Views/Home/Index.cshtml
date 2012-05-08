@@ -1,0 +1,15 @@
+﻿@model dynamic
+<ul>
+    <li>
+        @Html.ActionLink("Example 1: Validation with standalone service.", "Index", "Customers")
+    </li>
+    <li>
+        @Html.ActionLink("Example 2: Obtaining entity from repository. Validation is done by entity itself. Implemented IDataErrorInfo interface", "Index", "CustomerEntities")
+    </li>
+    <li>
+        @Html.ActionLink("Example 3: Binding to ViewModel. Validation within Model Binder. Fluent Validation Provider is used", "Index", "LineItems")    
+    </li>
+    <li>
+        @Html.ActionLink("Example 4: Data Annotations Validation Provider is used", "Index", "DataAnnotations")
+    </li>
+</ul>

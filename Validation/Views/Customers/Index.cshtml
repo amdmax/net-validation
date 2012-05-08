@@ -1,0 +1,12 @@
+﻿@using DataValidation.ViewModels
+@model List<CustomerViewModel>
+
+<h2>Customers</h2>
+<ul>
+    @foreach(CustomerViewModel viewModel in Model)
+    {
+        <li>@Html.ActionLink(viewModel.Email, "Show", new {id=viewModel.Id})</li>
+    }
+</ul>
+
+@Html.ActionLink("Create", "New")

@@ -1,0 +1,11 @@
+﻿@model DataValidation.Models.DataAnnotation
+
+@using (Html.BeginForm("Create", "DataAnnotations", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+
+    @Html.EditorFor(x=>x.Name)
+    @Html.EditorFor(x=>x.Dob)
+    @Html.EditorFor(x=>x.Email)
+    <input type="submit" value="Submit"/>
+}

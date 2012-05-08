@@ -1,0 +1,16 @@
+﻿@model DataValidation.ViewModels.CustomerViewModel
+<h2>
+    Line Item View Mode</h2>
+<table border="1">
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Email)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+        </td>
+    </tr>
+</table>
